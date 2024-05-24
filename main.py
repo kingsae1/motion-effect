@@ -131,7 +131,7 @@ async def gen_motion_effect(config):
     # parser.add_argument('--config', type=str, default='argument.yml',help='Configure of post processing')
     # args = parser.parse_args()
     # config = yaml.load(open(args.config, 'r'))
-    if config === Null :
+    if config == Null :
         config = default_config
         
     if config['offscreen_rendering'] is True:
