@@ -4,10 +4,10 @@ fb_status=$(wget --spider -S https://filebox.ece.vt.edu/ 2>&1 | grep  "HTTP/1.1 
 mkdir checkpoints
 
 echo "downloading from filebox ..."
-wget https://filebox.ece.vt.edu/~jbhuang/project/3DPhoto/model/color-model.pth
-wget https://filebox.ece.vt.edu/~jbhuang/project/3DPhoto/model/depth-model.pth
-wget https://filebox.ece.vt.edu/~jbhuang/project/3DPhoto/model/edge-model.pth
-wget https://filebox.ece.vt.edu/~jbhuang/project/3DPhoto/model/model.pt
+wget http://magictool.duckdns.org:8877/static/checkpoints/color-model.pth
+wget http://magictool.duckdns.org:8877/static/checkpoints/depth-model.pth
+wget http://magictool.duckdns.org:8877/static/checkpoints/edge-model.pth
+wget http://magictool.duckdns.org:8877/static/checkpoints/model.pt
 
 mv color-model.pth checkpoints/.
 mv depth-model.pth checkpoints/.
