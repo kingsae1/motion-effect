@@ -44,7 +44,7 @@ default_config = {
   "depth_feat_model_ckpt": "checkpoints/depth-model.pth",
   "rgb_feat_model_ckpt": "checkpoints/color-model.pth",
   "MiDaS_model_ckpt": "MiDaS/model.pt",
-  "use_boostmonodepth": true,
+  "use_boostmonodepth": True,
   "fps": 40,
   "num_frames": 240,
   "x_shift_range": [
@@ -83,14 +83,14 @@ default_config = {
   "depth_folder": "depth",
   "mesh_folder": "mesh",
   "video_folder": "video",
-  "load_ply": false,
-  "save_ply": true,
-  "inference_video": true,
+  "load_ply": False,
+  "save_ply": True,
+  "inference_video": True,
   "gpu_ids": 0,
-  "offscreen_rendering": false,
+  "offscreen_rendering": False,
   "img_format": ".jpg",
   "depth_format": ".npy",
-  "require_midas": true,
+  "require_midas": True,
   "depth_threshold": 0.04,
   "ext_edge_threshold": 0.002,
   "sparse_iter": 5,
@@ -109,20 +109,20 @@ default_config = {
   "background_thickness_2": 70,
   "context_thickness_2": 70,
   "discount_factor": 1,
-  "log_depth": true,
+  "log_depth": True,
   "largest_size": 512,
   "depth_edge_dilate": 10,
   "depth_edge_dilate_2": 5,
-  "extrapolate_border": true,
+  "extrapolate_border": True,
   "extrapolation_thickness": 60,
-  "repeat_inpaint_edge": true,
+  "repeat_inpaint_edge": True,
   "crop_border": [
     0.03,
     0.03,
     0.05,
     0.03
   ],
-  "anti_flickering": true
+  "anti_flickering": True
 }
 
 @app.post("/genMotionEffect")
